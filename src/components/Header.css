@@ -1,0 +1,30 @@
+.header {
+    position: absolute;
+    width: 100vw;
+    /* height: 2em; */
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-sections {
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+    padding-right: 1.5em;
+}
+
+.header-sections > div {
+    color: white;
+    font-size: 1.25em;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: .35em;
+
+}
+
+.header-sections > div:hover {
+    background-color: #333;
+}

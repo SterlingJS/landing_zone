@@ -1,22 +1,18 @@
 import logo from './logo.svg';
+import Header from './components/Header'
+import Tile from './components/Tile'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Tile firstLine="Artificial" secondLine="Intelligence" color="white" />
+      <Tile firstLine="DevOps" secondLine="Engineering" color="black"/>
+      <Tile firstLine="Cloud" secondLine="Infrastructure" color="white"/>
+      <Tile firstLine="Software" secondLine="Engineering" color="black"/>
+
       </header>
     </div>
   );
